@@ -18,23 +18,23 @@ public class ClienteController {
         return clienteService.findAll();
     }
 
-//    @PostMapping
-//    public Cliente create(@RequestBody Cliente cliente) {
-//        return clienteService.create(cliente);
-//    }
-//
-//    @PutMapping
-//    public Cliente update(@RequestBody Cliente cliente){
-//        return clienteService.update(cliente);
-//    }
-//
-//    @GetMapping("/{id}")
-//    public Cliente findById(@PathVariable("id") Integer idCliente){
-//        return clienteService.findById(idCliente);
-//    }
-//
-//    @DeleteMapping("/{id}")
-//    public void delete(@PathVariable("id") Integer idCliente) {
-//        clienteService.delete(idCliente);
-//    }
+    @PostMapping
+    public Cliente create(@RequestBody Cliente cliente) {
+        return clienteService.create(cliente);
+    }
+
+    @PutMapping
+    public Cliente update(@RequestBody Cliente cliente){
+        return clienteService.update(cliente);
+    }
+
+    @GetMapping("/{id}")
+    public Cliente findById(@PathVariable("id") Integer idCliente){
+        return clienteService.findById(idCliente);
+    }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable("id") Integer idCliente) {
+        clienteService.delete(idCliente);
+    }
 }

@@ -2,6 +2,7 @@ package com.sventas.sventas.service;
 
 import com.sventas.sventas.model.Cliente;
 import com.sventas.sventas.repository.IClienteRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.Optional;
 @Service
 public class ClienteService implements IClienteService{
 
+    @Autowired
     private IClienteRepository clienteRepo;
 
     @Override
